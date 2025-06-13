@@ -7,23 +7,23 @@ Please direct bug reports to the [official repository](
 
 To avoid having to expose more of the host file system in the sandbox but still
 allowing extending Chromium, the following extension points are defined:
-- io.github.ungoogled_software.ungoogled_chromium.Policy
-- io.github.ungoogled_software.ungoogled_chromium.Extension
-- io.github.ungoogled_software.ungoogled_chromium.NativeMessagingHost
+- io.github.imputnet.helium-chromium.Policy
+- io.github.imputnet.helium-chromium.Extension
+- io.github.imputnet.helium-chromium.NativeMessagingHost
 
-#### io.github.ungoogled_software.ungoogled_chromium.Policy
+#### io.github.imputnet.helium-chromium.Policy
 
 This extension point can be used to configure custom Chromium policies and is
 currently on version '1' and will make any policy under the `policies/managed` and
 `policies/recommended` subdirectories available to Chromium.
 
-#### io.github.ungoogled_software.ungoogled_chromium.Extension
+#### io.github.imputnet.helium-chromium.Extension
 
 Similarly to the above, but for Chromium extensions, this extension point is
 also currently on version '1' and will make any extension under the `extensions`
 subdirectory available to Chromium.
 
-#### io.github.ungoogled_software.ungoogled_chromium.NativeMessagingHost
+#### io.github.imputnet.helium-chromium.NativeMessagingHost
 
 Also as above, but for [native messaging host](https://developer.chrome.com/docs/apps/nativeMessaging/)
 support. As the other extension points, this extension point is also currently
@@ -45,8 +45,8 @@ policies, extensions, etc.
 One example of such "unmanaged extension" could be an extension point that exposes
 all system policies installed under `/etc/chromium-browser/policies/{managed,recommended}`.
 This could be done for example by creating an extension point under
-`/var/lib/flatpak/extension/io.github.ungoogled_software.ungoogled_chromium.Policy.system-policies`, with
-`/var/lib/flatpak/extension/io.github.ungoogled_software.ungoogled_chromium.Policy.system-policies/<arch>/<version>`
+`/var/lib/flatpak/extension/io.github.imputnet.helium-chromium.Policy.system-policies`, with
+`/var/lib/flatpak/extension/io.github.imputnet.helium-chromium.Policy.system-policies/<arch>/<version>`
 being a symlink to `/etc/chromium-browser`. Note that `<version>` must match the
 extension point version.
 
@@ -65,12 +65,12 @@ For other problems please check https://ungoogled-software.github.io/ungoogled-c
 before creating an issue in this repository. However, keep in mind the following while
 reading any document about Ungoogled Chromium:
 
-* `~/.config/chromium` → `~/.var/app/io.github.ungoogled_software.ungoogled_chromium/config/chromium`
+* `~/.config/chromium` → `~/.var/app/io.github.imputnet.helium-chromium/config/chromium`
 
 `~/.config/chromium` is not accessible to Ungoogled Chromium and the above path should be used
 instead.
 
-Also keep in mind that after making a change, make sure to do a `flatpak kill io.github.ungoogled_software.ungoogled_chromium`
+Also keep in mind that after making a change, make sure to do a `flatpak kill io.github.imputnet.helium-chromium`
 to ensure that Ungoogled Chromium was actually restarted. This is because by default, Chromium
 runs in the background after being started for the first time (closing the window doesn't actually
 exit Chromium, just keeps it in a sort of "standby" mode).

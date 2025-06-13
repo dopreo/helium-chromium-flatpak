@@ -57,7 +57,7 @@ finish-args:
   - --filesystem=~/.config/kioslaverc
 
 add-extensions:
-  io.github.ungoogled_software.ungoogled_chromium.NativeMessagingHost:
+  io.github.imputnet.helium-chromium.NativeMessagingHost:
     version: '1'
     directory: chromium/native-messaging-hosts
     merge-dirs: native-messaging-hosts
@@ -65,7 +65,7 @@ add-extensions:
     no-autodownload: true
     autodelete: true
 
-  io.github.ungoogled_software.ungoogled_chromium.Extension:
+  io.github.imputnet.helium-chromium.Extension:
     version: '1'
     directory: chromium/extensions
     merge-dirs: extensions;native-messaging-hosts;policies/managed;policies/recommended
@@ -73,7 +73,7 @@ add-extensions:
     no-autodownload: true
     autodelete: true
 
-  io.github.ungoogled_software.ungoogled_chromium.Policy:
+  io.github.imputnet.helium-chromium.Policy:
     version: '1'
     directory: chromium/policies
     merge-dirs: policies/managed;policies/recommended
@@ -182,9 +182,9 @@ modules:
           - -d
           - third_party/pdfium
       - type: file
-        path: io.github.ungoogled_software.ungoogled_chromium.desktop
+        path: io.github.imputnet.helium-chromium.desktop
       - type: file
-        path: io.github.ungoogled_software.ungoogled_chromium.metainfo.xml
+        path: io.github.imputnet.helium-chromium.metainfo.xml
       - type: file
         path: chromium.sh
       - type: file
