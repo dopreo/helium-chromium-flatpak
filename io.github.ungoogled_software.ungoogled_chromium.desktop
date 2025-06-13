@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=Ungoogled Chromium
+Name=Helium
 # Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
 # From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
 GenericName=Web Browser
@@ -109,10 +109,10 @@ Exec=/app/bin/chromium %U
 StartupWMClass=chromium-browser
 StartupNotify=true
 Terminal=false
-Icon=io.github.ungoogled_software.ungoogled_chromium
+Icon=io.github.imputnet.helium-chromium
 Type=Application
 Categories=Network;WebBrowser;WebDevelopment;Viewer;
-Keywords=chrome;internet;browser;chromium;google;ungoogled;
+Keywords=chrome;internet;browser;chromium;helium;google;ungoogled;
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
 Actions=new-window;new-private-window;
 

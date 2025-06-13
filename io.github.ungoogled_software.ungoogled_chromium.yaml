@@ -1,4 +1,4 @@
-app-id: io.github.ungoogled_software.ungoogled_chromium
+app-id: io.github.imputnet.helium
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
