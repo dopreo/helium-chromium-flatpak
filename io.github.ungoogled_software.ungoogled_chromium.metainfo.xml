@@ -11,7 +11,7 @@
   <metadata_license>GPL-3.0</metadata_license>
   <project_license xml:space="preserve"></project_license>
   <url type="homepage">https://github.com/imputnet/helium-chromium</url>
-  <url type="help">https://github.com/ungoogled-software/ungoogled-chromium/blob/master/SUPPORT.md</url>
+  <url type="help">https://github.com/imputnet/helium-chromium/blob/master/SUPPORT.md</url>
   <url type="bugtracker">https://github.com/dopreo/helium-chromium-flatpak/issues</url>
   <keywords>
     <keyword>web browser</keyword>

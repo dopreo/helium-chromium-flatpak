@@ -101,7 +101,7 @@ build-options:
     JAVA_HOME: /usr/lib/sdk/openjdk
 
     # Allow the use of nightly features with stable Rust compiler
-    # https://github.com/ungoogled-software/ungoogled-chromium/pull/2696#issuecomment-1918173198
+    # https://github.com/imputnet/helium-chromium/pull/2696#issuecomment-1918173198
     RUSTC_BOOTSTRAP: '1'
 
     # Configure CCACHE for faster builds
@@ -169,7 +169,7 @@ modules:
       - ./install.sh
     sources:
       - type: git
-        url: https://github.com/ungoogled-software/ungoogled-chromium
+        url: https://github.com/imputnet/helium-chromium
         commit: 47bc6ecca740b3a700865e0c1418a1802af4bba2
         dest: uc
       - type: archive
